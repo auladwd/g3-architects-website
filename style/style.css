@@ -14,12 +14,25 @@
   display: flex;
 }
 
+button {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+}
+
 
 .nav-bar{
   
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  background-color: #b8d2ec;
 
 }
 .nav-bar a {
@@ -29,3 +42,123 @@
   margin: 0 10px;}
 .nav-bar a:hover {
   color: #007BFF; }
+
+  .nav-bar .banner {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .banner img {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .banner {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .features-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .features{
+    justify-content: center;
+    align-items: center;
+    background-color: azure;
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 20px;
+  
+  }
+
+  .features-contant{
+    margin-left: 20px;
+    font-size: larger;
+  }
+
+.love{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.love-contant h1 {
+  font-size: 2rem;
+  color: #0d0909;
+  border-left: 15px solid orange;
+  padding-left: 5px;
+  margin-top:20px;
+
+  
+}
+
+.love-card{
+
+  color: rgb(17, 15, 15);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(5, 5, 5, 0.1);
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 1px solid #ccc;
+}
+
+.btn{
+  padding: 20px 30px;
+  margin-top: -50px;
+  margin-left: -50px;
+  background-color: orange;
+}
+
+
+
+
+
+
+
+  @media screen and (max-width: 576px) {
+
+    
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   margin: 0 auto;
+}
+    .features-image {
+      grid-template-columns: 1fr;
+    }
+
+    .love{
+
+      flex-direction: column;
+    }
+
+
+}
+
+  @media screen and (min-width: 576px) and (max-width: 995px) {
+
+    
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   margin: 0 auto;
+}
+    /* .features-image {
+      grid-template-columns: 2fr;
+    } */
+
+
+}
+   
+    
